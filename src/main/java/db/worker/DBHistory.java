@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DBHistory {
     private  final  String HOST = "jdbc:postgresql://localhost:5432/ChangeHistory";
     private  final String USERNAME = "postgres";
-    private final String PASSWORD = "0660561221";
+    private final String PASSWORD = "postgres";
 
     private Connection connection;
 
