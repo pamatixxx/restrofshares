@@ -1,18 +1,20 @@
 package io.sudarykov.liqubasefirs;
 
+import db.worker.JSONReadFromFile;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-//import org.springframework.cloud.openfeign.EnableFeignClients;
+
+import java.io.*;
+
+import java.sql.SQLException;
 
 
 @SpringBootApplication
-//@EnableFeignClients
-//@EnableAutoConfiguration
-//@EnableFeignClients(clients = InventoryServiceFeignClient.class)
 public class LiqubaseFirsApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, SQLException {
         SpringApplication.run(LiqubaseFirsApplication.class, args);
+       JSONReadFromFile.addFromFile();
     }
 
 }
